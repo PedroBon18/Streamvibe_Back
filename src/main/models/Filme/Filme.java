@@ -12,6 +12,7 @@ import lombok.Setter;
 
 public class Filme {
 
+    private int id;
     private String nome;
     private String estudio;
     private double duracao;
@@ -21,6 +22,15 @@ public class Filme {
     private String elenco;
     private String sinopse;
 
+    public Filme(DadosCadastroFilme dados) {
+        this.nome = dados.nome();
+        this.estudio = dados.estudio();
+        this.duracao = dados.duracao();
+        this.imagem = dados.imagem();
+        this.genero = dados.genero();
+        this.imagem = dados.elenco();
+        this.sinopse = dados.sinopse();
 
+    }
 
 }
