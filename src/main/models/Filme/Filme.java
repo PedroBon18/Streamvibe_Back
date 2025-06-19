@@ -1,8 +1,8 @@
-import jakarta.persistence.Entity;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+package com.streamvibe.api.models;
+
+
+import jakarta.persistence.*;
+import lombok.*;
 
 @Getter
 @Setter
@@ -12,12 +12,17 @@ import lombok.Setter;
 
 public class Filme {
 
-    private int id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private integer id;
     private String nome;
     private String estudio;
     private double duracao;
     private String imagem;
-    private String genero;
+
+    @Enumerated(EnumType.STRING)
+    private Genero genero;
+
     private String diretor;
     private String elenco;
     private String sinopse;

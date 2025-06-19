@@ -1,11 +1,22 @@
+import jakarta.persistence.Embeddable;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Embeddable
 public class Endereco {
-    String id;
-    String Rua;
-    String Numero;
-    String Bairro;
-    String Cep;
-    String Complemento;
-    String Cidade;
+    
+   private String Rua;
+   private String Numero;
+   private String Bairro;
+   private String Cep;
+   private String Complemento;
+   private String Cidade;
 
     public Endereco(DadosCadastroEndereco dados){
         this.id = dados.id();
