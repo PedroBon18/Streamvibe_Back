@@ -18,7 +18,7 @@ H2 Database (ou configure outro no application.properties)
 bash
 Copiar
 Editar
-git clone https://github.com/seuusuario/Streamvibe_Back.git](https://github.com/PedroBon18/Streamvibe_Back.git
+git clone https://github.com/PedroBon18/Streamvibe_Back.git
 cd Streamvibe_Back
 2️⃣ Compile e rode o projeto usando Maven:
 
