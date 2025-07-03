@@ -13,6 +13,7 @@ Maven
 H2 Database (ou configure outro no application.properties)
 
 🚀 Como rodar localmente
+
 1️⃣ Clone o repositório:
 
 bash
