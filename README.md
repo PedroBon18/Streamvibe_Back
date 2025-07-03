@@ -20,6 +20,7 @@ Copiar
 Editar
 git clone https://github.com/PedroBon18/Streamvibe_Back.git
 cd Streamvibe_Back
+
 2️⃣ Compile e rode o projeto usando Maven:
 
 bash
